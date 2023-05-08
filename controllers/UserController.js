@@ -9,7 +9,7 @@ const UserController = {
 			)
 			.catch((error) => {
 				console.log(error)
-				res.status(500).send({ message: 'An error happened' })
+				res.status(500).send({ message: 'An error happened', error })
 			})
 	},
 	getAll(req, res) {
@@ -31,7 +31,7 @@ const UserController = {
 			})
 			res.send(user)
 		} catch (error) {
-			res.send('Error fatal')
+			res.send('Error fatal', error)
 		}
 	},
 	async delete(req, res) {
