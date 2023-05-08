@@ -1,15 +1,15 @@
 const { User, Post } = require('../models/index.js')
 
 const UserController = {
-	create(req, res) {
+	create(req, res, next) {
 		req.body.role = 'user'
 		User.create(req.body)
 			.then((user) =>
 				res.status(201).send({ message: 'Usuario creado con éxito', user })
 			)
 			.catch((error) => {
-				console.log(error)
-				res.status(500).send({ message: 'An error happened', error })
+				// res.status(500).send({ message: 'An error happened', error })
+				next(error)
 			})
 	},
 	getAll(req, res) {
