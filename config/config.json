@@ -2,10 +2,14 @@
 	"development": {
 		"username": "root",
 		"password": "Mysql2023",
-		"database": "social_media",
+		"database": "media_mail",
 		"host": "127.0.0.1",
 		"dialect": "mysql",
-		"jwt_secret": "mimamamemima"
+		"jwt_secret": "mimamamemima",
+		"credentials": {
+			"user": "arantza.frontend@gmail.com",
+			"pass": "fisxnqmcdgavfcyx"
+		}
 	},
 	"test": {
 		"username": "root",

@@ -10,5 +10,6 @@ router.delete('/id/:id', UserController.delete)
 router.put('/id/:id', UserController.update)
 router.post('/login', UserController.login)
 router.delete('/logout', authentication, UserController.logout)
+router.get('/confirm/:emailToken', UserController.confirm)
 
 module.exports = router
