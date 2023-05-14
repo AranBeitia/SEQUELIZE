@@ -7,8 +7,8 @@
 		"dialect": "mysql",
 		"jwt_secret": "mimamamemima",
 		"credentials": {
-			"user": "arantza.frontend@gmail.com",
-			"pass": "fisxnqmcdgavfcyx"
+			"user": "email@email.com",
+			"pass": "fisxvqmcdxavfcyz"
 		}
 	},
 	"test": {
