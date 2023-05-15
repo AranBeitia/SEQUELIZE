@@ -13,7 +13,7 @@
 	},
 	"test": {
 		"username": "root",
-		"password": null,
+		"password": "Mysql2023",
 		"database": "database_test",
 		"host": "127.0.0.1",
 		"dialect": "mysql"
